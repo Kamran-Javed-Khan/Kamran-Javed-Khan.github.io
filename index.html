@@ -15,12 +15,12 @@
     <main>
         <div class="flex">
             <span class="advice-id">Advice #</span>
-            <span class="advice-text">""</span>
+            <q class="advice-text"></q>
             <span class="divider-padding">
                 <img id="desktop-divider" src="images/pattern-divider-desktop.svg" alt="divider">
                 <img id="mobile-divider" src="images/pattern-divider-mobile.svg" alt="divider">
             </span>
-            <div id="dice">
+            <div id="dice" onclick="getSomeAdvice()" onkeydown="getSomeAdvice()" tabindex="0">
                 <img id="dice-icon" src="images/icon-dice.svg" alt="dice">
             </div>
         </div>

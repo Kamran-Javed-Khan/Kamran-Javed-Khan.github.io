@@ -26,8 +26,8 @@ main {
     justify-content: center;
     align-items: center;
     background: var(--dark-grayish-blue);
-    width: 30rem;
-    padding: 1rem;
+    width: 15em;
+    padding: 3rem;
     border-radius: 1rem;
     position: relative;
 }
@@ -40,9 +40,20 @@ main {
     padding: 1em;
 }
 
+q {
+    quotes: "“" "”";
+}
+q::before {
+    content: open-quote;
+}
+q::after {
+    content: close-quote;
+}
+
 .advice-text {
     color: white;
     text-align: center;
+    font-weight: var(--weight);
 }
 
 #mobile-divider {display: none;}
@@ -50,7 +61,10 @@ main {
 @media (max-width: 768px) {
     #desktop-divider {display: none;}
     #mobile-divider {display: block;}
-    .flex { width: 20rem; }
+    .flex {
+        width: 20rem;
+        padding: 1rem;
+    }
 }
 
 .divider-padding {
@@ -66,4 +80,11 @@ main {
     justify-content: center;
     align-items: center;
     bottom: -30px;
+    cursor: pointer;
+}
+
+#dice:hover {
+    -webkit-box-shadow: 0px 0px 30px 5px var(--neon-green);
+    -moz-box-shadow: 0px 0px 30px 5px var(--neon-green);
+    box-shadow: 0px 0px 30px 5px var(--neon-green);
 }
