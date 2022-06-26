@@ -1,0 +1,69 @@
+:root {
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+    --weight: 800;
+}
+
+body {
+    margin: 0;
+    font-size: 28px;
+    font-family: 'DM Sans', sans-serif;
+    background: var(--dark-blue);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--dark-grayish-blue);
+    width: 30rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.advice-id {
+    color: var(--neon-green);
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 3px;
+    padding: 1em;
+}
+
+.advice-text {
+    color: white;
+    text-align: center;
+}
+
+#mobile-divider {display: none;}
+
+@media (max-width: 768px) {
+    #desktop-divider {display: none;}
+    #mobile-divider {display: block;}
+    .flex { width: 20rem; }
+}
+
+.divider-padding {
+    padding: 1em 0;
+}
+
+#dice {
+    position: absolute;
+    background: var(--neon-green);
+    border-radius: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -30px;
+}
